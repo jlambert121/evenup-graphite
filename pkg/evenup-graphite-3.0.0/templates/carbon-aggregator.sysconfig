@@ -1,0 +1,4 @@
+# Managed by puppet - do not modify
+#
+CONFIG=/etc/carbon/carbon.conf
+LOG_DIR=<%= scope.lookupvar('a_log_dir') %>

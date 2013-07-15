@@ -47,16 +47,11 @@ define graphite::carbon::storage (
   $order = 10,
 ) {
 
-  include graphite::carbon::install
-  include graphite::carbon::service
-  Class['graphite::carbon::install'] ->
-  Graphite::Carbon::Storage[$name] ~>
-  Class['graphite::carbon::service']
-
   concat::fragment { $name:
     target  => '/etc/carbon/storage-schemas.conf',
     order   => $order,
     content => template('graphite/storage-schemas.conf.erb'),
+    require => Class['graphite::carbon::install'],
   }
 }
 

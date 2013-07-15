@@ -1,0 +1,63 @@
+{
+  "summary": "Manages graphite.",
+  "license": "Apache",
+  "dependencies": [
+    {
+      "version_requirement": ">= 1.3.0",
+      "name": "evenup/apache"
+    },
+    {
+      "version_requirement": ">= 0.2.0",
+      "name": "ripienaar/concat"
+    }
+  ],
+  "version": "3.0.0",
+  "checksums": {
+    "templates/storage-schemas.conf.erb": "5a4cbe104442f0c7c45aa9251bd35e2e",
+    "spec/classes/graphite_carbon_spec.rb": "e513533aef9633f1e7c9bf074f746d6d",
+    "manifests/web/install.pp": "c95d5fb3c3f41bf7cdde50b934346244",
+    "manifests/init.pp": "06029c26d723ba1dddbf83a971397b10",
+    "manifests/web/config.pp": "132a3fb10d96a70d0afbd8fcf3904796",
+    "manifests/carbon/install.pp": "2ae920ac3362ec2046bdaa25758dbc2e",
+    "LICENSE": "6a34c40bb8fa2134a463a814bae7dbe6",
+    "templates/carbon-cache.sysconfig": "19c44e300dd67a7a01d927c4950f7186",
+    "spec/classes/graphite_web_install_spec.rb": "0c27a3fc6abb3d0e7f25b6718efbcc69",
+    "README.md": "94f7f57a65bf3bd006a441557004d733",
+    "Rakefile": "f37e6131fe7de9a49b09d31596f5fbf1",
+    "manifests/whisper/install.pp": "c6998cfcb4c2a3e323bf2fb12e972abf",
+    "manifests/carbon/config.pp": "4419c2c84bcf3a8144718f2d64029f68",
+    "CHANGELOG": "5e77af75291114603762bb89b46d4493",
+    "templates/storage-aggregation.conf": "4dfdcbeb9f74a350e31c27ac8f356137",
+    "spec/spec_helper.rb": "3ea886dd135e120afa31e0aab12e85b0",
+    "spec/classes/graphite_web_spec.rb": "4a74ba5cc4c53c4254169815da78b31b",
+    "templates/carbon.conf": "2c5a8e928ab25174870c02556b97df7c",
+    "spec/classes/graphite_whisper_install_spec.rb": "61eac69226bccee700913d59568aa5c7",
+    "spec/classes/graphite_init_spec.rb": "52745e6e0bb0eb96a557b998c539c570",
+    "spec/classes/graphite_carbon_config_spec.rb": "751d2e47803421f25838c1ec4247db87",
+    "manifests/carbon/storage.pp": "982585360cc3c6b1bce8d5ab44b8397f",
+    "Gemfile": "3ad486d60d90bfe4395b368b95481e01",
+    "files/graphTemplates.conf": "b192aad022bd758312b7faec569fc05e",
+    "templates/local_settings.py": "93185c4678bf637e2c7ded6fe80be611",
+    "templates/carbon-relay.sysconfig": "050346f174f8ece7c1fe2a8a165d20af",
+    "spec/classes/graphite_carbon_service_spec.rb": "c94142398f5318302e2b13c8ede8747a",
+    "templates/carbon-aggregator.sysconfig": "54fbcf4513b683e4cbf7aaf3d4680afe",
+    "spec/classes/graphite_whisper_spec.rb": "8d01fd94ff28242d1a22d4e10f811a92",
+    "manifests/carbon.pp": "2bf1266c84bac61ff0e4d4050529f8b4",
+    "spec/classes/graphite_carbon_install_spec.rb": "4552accff06e80a9a588d0e6dc9a92ef",
+    "Modulefile": "0f812526ff263f5cae2fa238fc02743c",
+    "manifests/whisper.pp": "88d0b95d16f07ea8f76548f291918437",
+    "spec/classes/graphite_web_config_spec.rb": "ea1175a9180d68999f40309643acd8a4",
+    "manifests/web.pp": "99ad459e82b1cf53b78f3f77ac4d006f",
+    "spec/defines/graphite_carbon_storage_spec.rb": "134649fde5fa4116a5aa8886e8bfbfef",
+    "manifests/carbon/service.pp": "a20385d2781cc8d1b2d7d4381b672feb",
+    "files/dashboard.conf": "1f6cda27ee2d34b5393126a30905cc0d"
+  },
+  "description": "Installs, configures, and runs the graphite services",
+  "types": [
+
+  ],
+  "author": "Justin Lambert <jlambert@letsevenup.com>",
+  "source": "UNKNOWN",
+  "project_page": "https://github.com/evenup/evenup-graphite",
+  "name": "evenup-graphite"
+}
