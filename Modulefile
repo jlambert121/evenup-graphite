@@ -1,5 +1,5 @@
 name 'evenup-graphite'
-version '3.0.0'
+version '3.0.1'
 author 'Justin Lambert <jlambert@letsevenup.com>'
 license 'Apache'
 summary 'Manages graphite.'
