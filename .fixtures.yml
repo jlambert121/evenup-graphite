@@ -1,0 +1,10 @@
+fixtures:
+  repositories:
+    apache: https://github.com/evenup/evenup-apache.git
+    beaver: https://github.com/evenup/evenup-beaver.git
+    concat: https://github.com/ripienaar/puppet-concat.git
+    logrotate: https://github.com/evenup/evenup-logrotate.git
+    stdlib: https://github.com/puppetlabs/puppetlabs-stdlib.git
+  symlinks:
+    graphite: "#{source_dir}"
+
