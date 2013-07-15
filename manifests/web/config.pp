@@ -26,7 +26,7 @@ class graphite::web::config (
     ensure  => file,
     owner   => 'root',
     group   => 'root',
-    mode    => 0444,
+    mode    => '0444',
     source  => 'puppet:///modules/graphite/dashboard.conf',
     require => Class['graphite::web::install'],
   }
@@ -35,7 +35,7 @@ class graphite::web::config (
     ensure  => file,
     owner   => 'root',
     group   => 'root',
-    mode    => 0444,
+    mode    => '0444',
     source  => 'puppet:///modules/graphite/graphTemplates.conf',
     require => Class['graphite::web::install'],
   }
