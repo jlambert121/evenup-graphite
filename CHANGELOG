@@ -1,2 +1,5 @@
+v3.0.1:
+  Dependency fixes for graphite::carbon::storage
+  String/Array issues on some versions of puppet/ruby
 v3.0.0:
   Initial public release
