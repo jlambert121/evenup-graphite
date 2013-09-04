@@ -56,7 +56,12 @@ class graphite::web::config (
       serverAlias     => $::fqdn,
       docroot         => '/usr/share/graphite/webapp',
       aliases         => '/media/ "/usr/lib/python2.6/site-packages/django/contrib/admin/media/"',
-      locations       => [{'name' => '/content/', 'params' => ['SetHandler None']}, {'name' => '/media/', 'params' => ['SetHandler None']}],
+      locations       => [
+                            { 'name'    => '/content/',
+                              'params'  => ['SetHandler None']},
+                            { 'name'    => '/media/',
+                              'params'  => ['SetHandler None']}
+                          ],
       siteDirectives  => ['WSGIDaemonProcess graphite processes=5 threads=5 display-name="%{GROUP}" inactivity-timeout=120',
                           'WSGIProcessGroup graphite',
                           'WSGIApplicationGroup %{GLOBAL}',

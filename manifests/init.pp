@@ -14,10 +14,10 @@
 #
 class graphite {
 
+  notify { 'ingraphite': }
   class { 'graphite::whisper': }
   class { 'graphite::carbon': }
   class { 'graphite::web': }
-
 
   anchor { 'graphite::begin': }
   anchor { 'graphite::end': }
