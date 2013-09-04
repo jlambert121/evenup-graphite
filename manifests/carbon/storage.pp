@@ -48,6 +48,7 @@ define graphite::carbon::storage (
 ) {
 
   include graphite::carbon::install
+  include graphite::carbon::config
   include graphite::carbon::service
   Class['graphite::carbon::install'] ->
   Graphite::Carbon::Storage[$name] ~>

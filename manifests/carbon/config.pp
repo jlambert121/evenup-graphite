@@ -42,7 +42,6 @@ class graphite::carbon::config (
   $whisper_sparse_create        = false,
   $whisper_lock_writes          = false,
   $use_whitelist                = false,
-  $carbon_metric_prefix         = 'carbon',
   $carbon_metric_interval       = 60,
   $enable_amqp                  = false,
   $amqp_verbose                 = false,
@@ -184,7 +183,7 @@ class graphite::carbon::config (
   }
 
   graphite::carbon::storage { 'carbon':
-    pattern     => "^${carbon_metric_prefix}\.*",
+    pattern     => '^carbon\.*',
     retentions  => "${carbon_metric_interval}:90d",
     order       => 0,
   }

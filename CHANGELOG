@@ -1,3 +1,5 @@
+20130903 v3.1.0
+  Update spec tests
 v3.0.1:
   Dependency fixes for graphite::carbon::storage
   String/Array issues on some versions of puppet/ruby
