@@ -6,5 +6,5 @@ summary 'Manages graphite.'
 description 'Installs, configures, and runs the graphite services'
 project_page 'https://github.com/evenup/evenup-graphite'
 dependency 'evenup/apache', '>= 1.3.0'
-dependency 'ripienaar/concat', '>= 0.2.0'
+dependency 'puppetlabs/concat'
 
